@@ -1,0 +1,5 @@
+@import 'vendors';      // All 3rd-party vendor tools - frameworks, libraries, helpers, etc
+@import 'base';         // Contains all the resets, variables, mixins, and utility classes
+@import 'layout';       // All the Sass code handling the layout, which is the container and grid systems
+@import 'components';   // Everything that is reusable – buttons, navbars, cards, and so on
+@import 'pages';        // Contains styles specifics for page templates

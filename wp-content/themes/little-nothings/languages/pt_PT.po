@@ -1,0 +1,1010 @@
+# Copyright (C) 2020 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Little Nothings I18n 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
+"POT-Creation-Date: 2021-06-07 14:11+0100\n"
+"PO-Revision-Date: 2021-06-07 14:12+0100\n"
+"Last-Translator: Ricardo Carvalho <ricardo.carvalho@integer.pt>\n"
+"Language-Team: Ricardo Carvalho\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Domain: _s\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: assets/stylesheets/dist\n"
+"X-Poedit-SearchPathExcluded-2: assets/js/dist\n"
+
+#: 404.php:48
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Tente buscar nos arquivos. %1$s"
+
+#: archive.php:85 front-page.php:307 page-templates/page-about-us.php:96
+#: page-templates/page-about-us.php:102 page-templates/page-about-us.php:108
+#: page-templates/page-news.php:97
+msgid "Read more"
+msgstr "Leia mais"
+
+#: archive.php:105 page-templates/page-news.php:117
+msgid "Recent posts"
+msgstr "Posts mais recentes"
+
+#: archive.php:106 page-templates/page-news.php:118
+msgid "Older posts"
+msgstr "Posts mais antigos"
+
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Um pensamento sobre &ldquo;%1$s&rdquo;"
+
+#: footer.php:19 front-page.php:28
+msgid "Renovating Homes"
+msgstr "Reabilitamos Casas"
+
+#: footer.php:20 front-page.php:29
+msgid "Rebuilding Lives"
+msgstr "Reconstruímos Vidas"
+
+#: footer.php:51
+msgid "All rights reserved"
+msgstr "Todos os direitos reservados"
+
+#: front-page.php:30
+msgid "Discover"
+msgstr "Descubra"
+
+#: front-page.php:59
+msgid "Become a builder giver"
+msgstr "Torne-se um doador construtor"
+
+#: front-page.php:66
+msgid "Donate for a good house"
+msgstr "Doe por uma boa casa"
+
+#: front-page.php:80 page-templates/page-impact.php:39
+msgid "Little Nothings in numbers"
+msgstr "O Little Nothings em números"
+
+#: front-page.php:90 page-templates/page-impact.php:49
+msgid "interventions"
+msgstr "intervenções"
+
+#: front-page.php:91 page-templates/page-impact.php:50
+msgid "+200 family homes and +50 social institutions renovated"
+msgstr "+200 casas de família e +50 instituições sociais reabilitadas"
+
+#: front-page.php:101 page-templates/page-impact.php:60
+msgid "beneficiaries"
+msgstr "beneficiários"
+
+#: front-page.php:102 page-templates/page-impact.php:61
+msgid "Families and people living in institutions"
+msgstr "Famílias e utentes das instituições reabilitadas"
+
+#: front-page.php:112 page-templates/page-impact.php:71
+msgid "volunteers"
+msgstr "voluntários"
+
+#: front-page.php:113 page-templates/page-impact.php:72
+msgid "University and corporate volunteers"
+msgstr "Voluntários Universitários e Corporativos"
+
+#: front-page.php:123 page-templates/page-impact.php:82
+#: page-templates/page-impact.php:106
+#, fuzzy
+#| msgid "cities"
+msgid "municipalities"
+msgstr "municípios"
+
+#: front-page.php:124 page-templates/page-impact.php:83
+msgid "Have been already impacted by Little Nothings"
+msgstr "Já foram impactados pela solução Little Nothings"
+
+#: front-page.php:141
+msgid "of the Portuguese population cannot keep the house warm"
+msgstr "da população portuguesa não consegue manter a casa quente"
+
+#: front-page.php:149
+msgid "portuguese have no plumbed water or sanitation"
+msgstr "portugueses não têm água canalizada nem saneamento"
+
+#: front-page.php:157
+msgid "portuguese do not have electricity at home"
+msgstr "portugueses não têm eletricidade em casa"
+
+#: front-page.php:163
+msgid "Structural problems"
+msgstr "Problemas estruturais"
+
+#: front-page.php:164
+msgid "Lack of infrastructures"
+msgstr "Falta de infraestruturas"
+
+#: front-page.php:165
+msgid "Lack of health"
+msgstr "Falta de salubridade"
+
+#: front-page.php:166
+msgid "Bad hygiene conditions"
+msgstr "Más condições de higiene"
+
+#: front-page.php:167
+msgid "Lack of comfort"
+msgstr "Falta de conforto"
+
+#: front-page.php:171
+msgid ""
+"portugal is the second country of the european union where the mortality "
+"rate increases the most in winter"
+msgstr ""
+"portugal é o segundo país da união europeia onde a taxa de mortalidade mais "
+"aumenta no inverno"
+
+#: front-page.php:180
+msgid "More about us"
+msgstr "Mais sobre nós"
+
+#: front-page.php:200
+msgid "IRS"
+msgstr "Consignação do IRS"
+
+#: front-page.php:201
+msgid ""
+"Half a second to insert a cross becomes half percent (0.5%) of your irs that "
+"revert to the fight against housing poverty!"
+msgstr ""
+"Meio segundo para inserir uma cruz transformam-se em meio por cento (0,5%) "
+"do seu IRS que revertem para a luta contra a pobreza habitacional!"
+
+#: front-page.php:202 page-templates/page-all-in.php:96
+#: page-templates/page-all-in.php:102 page-templates/page-all-in.php:114
+msgid "Know more"
+msgstr "Saiba mais"
+
+#: front-page.php:214
+msgid "A decade of stories"
+msgstr "Uma década de histórias"
+
+#: front-page.php:215
+msgid ""
+"In 2020 we celebrate the 10 years of Little Nothings. 10 years full of "
+"impactful stories that we do not want to forget. We gathered volunteers who "
+"wore the shirt for the past 10 years and asked them to put their stories to "
+"the paper. Soon, we will launch a book, with some of the most remarkable "
+"stories of the last decade."
+msgstr ""
+"Em 2020 celebramos os 10 anos do Little Nothings. 10 anos repletos de "
+"histórias de impacto que não queremos esquecer. Por isso, juntámos "
+"voluntários que vestiram a camisola durante os últimos 10 anos e pedimos que "
+"passassem as suas histórias para o papel. Em breve, lançaremos um livro, que "
+"conta algumas das histórias mais marcantes da última década."
+
+#: front-page.php:216
+msgid "Buy here"
+msgstr "Compra aqui"
+
+#: front-page.php:234 page-templates/page-impact.php:95
+msgid "it was a year of great impact"
+msgstr "foi um ano de grande impacto"
+
+#: front-page.php:236
+msgid "Learn more about impact"
+msgstr "Saber mais sobre o impacto"
+
+#: front-page.php:250
+msgid "We believe in a world where housing poverty is in the history books."
+msgstr ""
+"Acreditamos num mundo onde a pobreza habitacional faz parte dos livros de "
+"história."
+
+#: front-page.php:251
+msgid ""
+"With the help of hundreds of volunteers, we rehabilitate dozens of homes a "
+"year into places worth living with joy and hope."
+msgstr ""
+"Com a ajuda de centenas de voluntários, reabilitamos dezenas de casas por "
+"ano tornando-as em lugares dignos de serem vividos com alegria e esperança."
+
+#: front-page.php:321
+msgid "Find more stories"
+msgstr "Conheça mais histórias"
+
+#: front-page.php:331
+msgid "Know how to help"
+msgstr "Saiba como ajudar"
+
+#: front-page.php:339
+msgid ""
+"Discover our Little Nothings merchandising offers! profit fully reverts to the "
+"fight against housing poverty in portugal"
+msgstr ""
+"Conheça as nossas ofertas de merchandising Little Nothings! O lucro reverte "
+"totalmente para o combate à pobreza habitacional em Portugal"
+
+#: front-page.php:346
+msgid "Make a donation"
+msgstr "Faça um donativo"
+
+#: front-page.php:347
+msgid ""
+"By making a one-time donation or joining our family of donor builders, who "
+"donate regularly, directly help families in need."
+msgstr ""
+"Ao fazer uma doação pontual ou ao juntar-se à nossa família de Doadores "
+"Construtores, que doam regularmente, ajuda directamente famílias "
+"necessitadas."
+
+#: front-page.php:354
+#, fuzzy
+#| msgid "Follow Us"
+msgid "Follow us"
+msgstr "Siga-nos"
+
+#: front-page.php:355
+msgid ""
+"Follow us on social media, share our mission with your friends and family "
+"and reach out to more people with us!"
+msgstr ""
+"Siga as nossas redes sociais, partilhe a nossa missão com os seus amigos e "
+"família e chegue connosco a mais pessoas!"
+
+#: front-page.php:364
+msgid "Receive our newsletter"
+msgstr "Receba a nossa newsletter"
+
+#: front-page.php:365
+msgid "And be always up to date with the news"
+msgstr "E esteja sempre a par das novidades"
+
+#: front-page.php:371
+msgid "Name"
+msgstr "Nome"
+
+#: front-page.php:374
+msgid "Email"
+msgstr "Email"
+
+#: front-page.php:379
+msgid "Date of birth"
+msgstr "Data de nascimento"
+
+#: front-page.php:387
+msgid "Subscribe"
+msgstr "Subscrever"
+
+#: functions.php:28
+msgid "Main menu"
+msgstr "Menu principal"
+
+#: functions.php:59
+msgid "Footer - "
+msgstr "Rodapé - "
+
+#: functions.php:61
+msgid "Add widgets here."
+msgstr "Adicionar widgets aqui."
+
+#: header.php:47 header.php:50 page-templates/page-impact.php:163
+#: template-parts/site-sidenav.php:59
+msgid "Support"
+msgstr "Apoiar"
+
+#: header.php:58
+msgid "Close"
+msgstr "Fechar"
+
+#: inc/class-wp-bootstrap-navwalker.php:366
+msgid "Add a menu"
+msgstr "Adicionar menu"
+
+#: inc/template-tags.php:63
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:66
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Postado em %1$s"
+
+#: inc/template-tags.php:73
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Tagged %1$s"
+
+#: inc/template-tags.php:83
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Deixe um comentário<span class=\"screen-reader-text\"> on %s</span>"
+
+#: inc/template-tags.php:100
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
+
+#: page-templates/page-about-us.php:40
+msgid "We enhance our impact by collaborating with local organizations"
+msgstr "Criamos impacto ao colaborar de forma integrada e organizada"
+
+#: page-templates/page-about-us.php:48
+#, fuzzy
+#| msgid ""
+#| "We activate the local network of social partners, to map and screen "
+#| "families living in a state of housing poverty. from there and with just a "
+#| "change we do a prioritization of houses and families that need just a "
+#| "change's intervention. "
+msgid ""
+"We activate the local network of social partners, to map and screen families "
+"living in a state of housing poverty. from there and with Little Nothings we "
+"do a prioritization of houses and families that need Little Nothings's "
+"intervention."
+msgstr ""
+"Mobilizar agentes locais para sinalizar casos de pobreza habitacional e "
+"aplicar os critérios Little Nothings para selecionar os casos que serão alvo "
+"de intervenção."
+
+#: page-templates/page-about-us.php:53
+msgid ""
+"Once the interventions are selected, Little Nothings is in charge for "
+"mobilizing the main resources needed for the project’s implementation."
+msgstr ""
+"Definidas as intervenções o Little Nothings encarrega-se de mobilizar os "
+"principais recursos necessários ao projeto e execução."
+
+#: page-templates/page-about-us.php:64
+msgid ""
+"Throughout the construction Little Nothings focuses on creating relationships "
+"with its beneficiaries and managing the affairs with the partners to enhance "
+"the social impact. during the intervention Little Nothings encourages the "
+"beneficiaries to take part in the works."
+msgstr ""
+"Durante toda a obra o Little Nothings está focado em criar relação com os seus "
+"beneficiários e a gerir a relação com os parceiros para potenciar a coesão "
+"social. Durante a intervenção os beneficiários são desafiados a participar."
+
+#: page-templates/page-about-us.php:69
+msgid ""
+"With the network of local partners Little Nothings ensures the changes and "
+"impact achieved during the rehabilitation works are not lost, by "
+"guaranteeing every family is followed and helped in other social issues by "
+"social workers."
+msgstr ""
+"O Little Nothings garante que a mudança operada pela obra não desaparece, "
+"promovendo o envolvimento de outros agentes locais, vocacionados para o "
+"acompanhamento de outras problemáticas sociais."
+
+#: page-templates/page-about-us.php:83
+msgid "Little Nothings programmes"
+msgstr "Programas Little Nothings"
+
+#: page-templates/page-about-us.php:88
+msgid ""
+"We have developed various interventions programmes, letting us to intervene "
+"in different contexts at the same time. these allow us to raise the social "
+"cohesion and impact in the local communities."
+msgstr ""
+"Desenvolvemos vários programas de intervenção que permitem que atuemos em "
+"diversos contextos em paralelo, potenciando assim o impacto social e a "
+"coesão social nas comunidades locais."
+
+#: page-templates/page-about-us.php:95
+msgid ""
+"In the summer, Little Nothings camps (7 to 12 days programme), take place in "
+"the contryside of portugal, generating social impact in the local "
+"communities."
+msgstr ""
+"Nos meses de Verão os Campos Little Nothings de 13 dias espalham-se pelo país "
+"e geram impacto social nas comunidades locais."
+
+#: page-templates/page-about-us.php:101
+msgid ""
+"The work never stops at Little Nothings! even during the academic holidays we "
+"organize one-week-long bootcamps in the cities of lisbon and porto."
+msgstr ""
+"Durante as férias académicas as obras não param! Os bootcamps semanais do "
+"Little Nothings mantêm a alegria das obras Just em Lisboa e no Porto."
+
+#: page-templates/page-about-us.php:107
+msgid ""
+"One intense day where companies can go all in with us, where their staff can "
+"have a social impact and get their hands dirty."
+msgstr ""
+"Um dia, intenso, em que as empresas vão a jogo com tudo, envolvendo os seus "
+"colaboradores para também gerarem impacto social e meterem a mão na massa."
+
+#: page-templates/page-about-us.php:118
+msgid "The team"
+msgstr "A equipa"
+
+#: page-templates/page-about-us.php:355
+msgid "Partners"
+msgstr "Parceiros"
+
+#: page-templates/page-about-us.php:358
+msgid ""
+"Eradicating housing poverty will always depend on the joint effort of "
+"various sectors. we seek to work with partners who want to help us achieve "
+"this goal, whether working on the issue of housing and energy poverty, or "
+"with support in kind or building material."
+msgstr ""
+"Erradicar a pobreza habitacional dependerá sempre do esforço conjunto de "
+"vários setores. Procuramos trabalhar com parceiros que nos queiram ajudar a "
+"atingir esse fim, seja trabalhando na temática da pobreza habitacional e "
+"energética, seja com apoios em géneros ou de material de construção."
+
+#: page-templates/page-about-us.php:359
+msgid ""
+"All partners take us further, whether they accompany us just one step or "
+"follow us all the way."
+msgstr ""
+"Todos os parceiros nos levam mais longe, quer nos acompanhem apenas num "
+"passo, quer o façam durante todo o caminho."
+
+#: page-templates/page-all-in.php:23
+msgid "Corporate volunteering"
+msgstr "Experiência de impacto corporativo"
+
+#: page-templates/page-all-in.php:44
+msgid "Doing an all in has advantages at several levels for your company:"
+msgstr "Fazer um All In traz vantagens a vários níveis para a sua empresa:"
+
+#: page-templates/page-all-in.php:52
+msgid ""
+"Say their work is more rewarding when they are offered opportunities with a "
+"positive impact on social and environmental levels."
+msgstr ""
+"Dizem que o seu trabalho é mais gratificante quando lhes são oferecidas "
+"oportunidades com impacto positivo aos níveis social e ambiental."
+
+#: page-templates/page-all-in.php:60
+msgid ""
+"Are more loyal to a company that helps them contribute to social and "
+"environmental issues."
+msgstr ""
+"São mais leais a uma empresa que os ajuda a contribuir para questões sociais "
+"e ambientais."
+
+#: page-templates/page-all-in.php:68
+msgid ""
+"Do not accept a job if a company does not have strong corporate social "
+"responsibility (csr) values"
+msgstr ""
+"Não aceitam um emprego se uma empresa não tiver fortes valores de "
+"responsabilidade social corporativa (CSR)"
+
+#: page-templates/page-all-in.php:73
+msgid ""
+"Many studies indicate that employees who stay at the company for longer "
+"periods cite job satisfaction as one of the main reasons for staying."
+msgstr ""
+"Muitos estudos indicam que os funcionários que permanecem na empresa por "
+"períodos mais longos citam a satisfação no trabalho como uma das principais "
+"razões para permanecer."
+
+#: page-templates/page-all-in.php:86
+msgid "Our programs"
+msgstr "Os nossos modelos"
+
+#: page-templates/page-all-in.php:95
+msgid ""
+"Participants absorb the immersive spirit of Just's volunteer camps during "
+"the summer"
+msgstr ""
+"Os participantes absorvem o espírito imersivo dos campos de voluntariado do "
+"Just, durante o Verão"
+
+#: page-templates/page-all-in.php:100
+msgid "solidarity day"
+msgstr "dia solidário"
+
+#: page-templates/page-all-in.php:101
+msgid ""
+"A day when participants create value for society and grow individually and "
+"as a team"
+msgstr ""
+"Um dia em que os participantes criam valor para a sociedade e crescem "
+"individualmente e em equipa"
+
+#: page-templates/page-all-in.php:112
+msgid "solidarity shifts"
+msgstr "turnos solidários"
+
+#: page-templates/page-all-in.php:113
+msgid ""
+"The teams participate in the rehabilitation of houses, in shifts during the "
+"semesters of activity."
+msgstr ""
+"As equipas participam na reabilitação de casas, em Turnos durante os "
+"semestres de atividade."
+
+#: page-templates/page-all-in.php:129
+msgid "satisfied companies"
+msgstr "empresas satisfeitas"
+
+#: page-templates/page-all-in.php:139
+msgid "average rating (in 10)"
+msgstr "avaliação média (em 10)"
+
+#: page-templates/page-all-in.php:149
+msgid "participants who would like to repeat an activity with Little Nothings"
+msgstr ""
+"participantes que gostariam de repetir uma atividade com o Little Nothings"
+
+#: page-templates/page-all-in.php:159
+msgid "participants who feel they have truly changed someone's life"
+msgstr ""
+"participantes que sentiram que mudaram verdadeiramente a vida de alguém"
+
+#: page-templates/page-all-in.php:172
+msgid "Some companies that have lived the all in experience"
+msgstr "Algumas empresas que viveram a experiência all in"
+
+#: page-templates/page-all-in.php:189
+msgid ""
+"Do you want to know more about the all in program and how your company can "
+"impact?"
+msgstr ""
+"Quer saber mais sobre o programa All In e como a sua empresa pode ter "
+"impacto?"
+
+#: page-templates/page-all-in.php:190 page-templates/page-support.php:68
+msgid "Contact us"
+msgstr "Contacte-nos"
+
+#: page-templates/page-connect.php:25
+msgid "On this page you can find projects associated with Little Nothings."
+msgstr "Nesta página pode encontrar projectos associados ao Little Nothings."
+
+#: page-templates/page-connect.php:26
+msgid ""
+"These projects, organized by people, entities and companies independent from "
+"Little Nothings, are committed to the fight against housing poverty."
+msgstr ""
+"Estes projectos, organizados por pessoas, entidades e empresas independentes "
+"ao Little Nothings, comprometem-se com a luta contra a Pobreza Habitacional."
+
+#: page-templates/page-connect.php:27
+msgid "Help them to help us!"
+msgstr "Ajude-os a ajudar-nos!"
+
+#: page-templates/page-connect.php:41
+msgid ""
+"Do you have a project and want to join Little Nothings and help us to "
+"rehabilitate houses and rebuild lives?"
+msgstr ""
+"Tem um projecto e quer juntar-se ao Little Nothings e ajudar-nos a Reabilitar "
+"Casas e Reconstruir Vidas?"
+
+#: page-templates/page-connect.php:43
+msgid "Talk to us"
+msgstr "Fale connosco"
+
+#: page-templates/page-impact.php:98
+msgid "Volunteers"
+msgstr "Voluntários"
+
+#: page-templates/page-impact.php:101
+msgid "Renovations"
+msgstr "Obras"
+
+#: page-templates/page-impact.php:102
+msgid "Particular houses"
+msgstr "Obras em casas particulares"
+
+#: page-templates/page-impact.php:103
+msgid "Institutions"
+msgstr "Intervenções em IPSS"
+
+#: page-templates/page-impact.php:107
+msgid "Little Nothings volunteer programs"
+msgstr "Programas de voluntariado Little Nothings"
+
+#: page-templates/page-impact.php:108
+msgid "Partnership with the Country mission"
+msgstr "Em parceria com a missão País"
+
+#: page-templates/page-impact.php:150
+msgid "Read the full 2020 impact report"
+msgstr "Leia o relatório de impacto 2020 completo"
+
+#: page-templates/page-impact.php:160
+msgid ""
+"All of our achievements have been possible to accomplish with the generosity "
+"of hundreds of people, institutions, companies and foundations."
+msgstr ""
+"Tudo isto só tem sido possível graças à generosidade de centenas de pessoas, "
+"instituições, empresas e fundações."
+
+#: page-templates/page-impact.php:161
+msgid ""
+"Don't miss the opportunity to enter this movement and support those who need "
+"it the most."
+msgstr ""
+"Não percas a oportunidade de entrar neste movimento e de apoiar quem mais "
+"precisa."
+
+#: page-templates/page-support.php:39
+msgid "Do you want to make a difference with us?"
+msgstr "Queres fazer a diferença connosco?"
+
+#: page-templates/page-support.php:40
+msgid ""
+"Help Little Nothings reach out more and more people living in housing poverty!"
+msgstr ""
+"O Little Nothings precisa de ajuda para chegar cada vez a mais pessoas que "
+"vivem em situação de pobreza habitacional!"
+
+#: page-templates/page-support.php:50
+msgid "Monetary donations"
+msgstr "Donativo Monetário"
+
+#: page-templates/page-support.php:51
+msgid ""
+"Any amount is helpful. However, if you want to commit to a fixed monthly "
+"amount it is always easier for Little Nothings to know how much money you can "
+"count on to schedule interventions."
+msgstr ""
+"Qualquer montante será uma ajuda. Contudo, se quiseres comprometer-te com um "
+"valor fixo mensal é sempre mais fácil para que o Little Nothings saiba com "
+"quanto dinheiro pode contar para programar as intervenções."
+
+#: page-templates/page-support.php:52
+msgid ""
+"By clicking on the button below, you can choose the frequency, amount and "
+"destination of your donation. you can of course also make a one-time "
+"donation."
+msgstr ""
+"Ao clicar no botão em baixo, podes escolher a periodicidade, valor e destino "
+"da tua doação. Podes também, claro, fazer uma doação pontual."
+
+#: page-templates/page-support.php:53
+msgid "Become a donor"
+msgstr "Torna-te um doador"
+
+#: page-templates/page-support.php:64
+msgid "Material donations"
+msgstr "Donativo de Material"
+
+#: page-templates/page-support.php:65
+msgid ""
+"During the year, we buy and apply a large amount of good quality "
+"construction material to the homes of the people we help."
+msgstr ""
+"Durante o ano, compramos e aplicamos uma grande quantidade de material de "
+"obra com boa qualidade nas casas das pessoas que ajudamos."
+
+#: page-templates/page-support.php:66
+msgid ""
+"We have two warehouses (porto and lisbon) that can receive donations of "
+"quality construction material."
+msgstr ""
+"Temos dois armazéns (Porto e Lisboa) que podem receber donativos de material "
+"de construção de qualidade."
+
+#: page-templates/page-support.php:67
+msgid ""
+"Unfortunately, these warehouses do not have much space. therefore, if you "
+"have furniture and / or appliances to donate, please get in touch with one "
+"of our partner institutions - entrajuda and bus (social utility goods) - "
+"which are dedicated to the collection and distribution of this type of "
+"donations."
+msgstr ""
+"Infelizmente, estes armazéns não têm muito espaço. Por isso, se tiveres "
+"mobiliário e/ou eletrodomésticos para doar, por favor entra em contacto com "
+"uma das nossas instituições parceiras - EntrAjuda e BUS (Bens Utilidade "
+"Social) - que se dedicam à recolha e distribuição deste género de donativos."
+
+#: page-templates/page-volunteers.php:39
+msgid "In short, volunteering at Little Nothings is ..."
+msgstr "Resumidamente, ser voluntário no Little Nothings é..."
+
+#: page-templates/page-volunteers.php:49
+msgid "Making life-long friendships"
+msgstr "Fazer amigos para a vida"
+
+#: page-templates/page-volunteers.php:59
+msgid "Giving back to the community"
+msgstr "Dar de volta à comunidade"
+
+#: page-templates/page-volunteers.php:69
+msgid "Sharing some beers after your shift"
+msgstr "Partilhar umas minis no fim do dia"
+
+#: page-templates/page-volunteers.php:79
+msgid "Having a fashionable t-shirt"
+msgstr "Ter uma t-shirt da moda"
+
+#: page-templates/page-volunteers.php:102
+msgid ""
+"Being a volunteer for just showed me one side of porto that is not always "
+"visible. i am very happy about the opportunity to help improve the living "
+"conditions of people who need it so much."
+msgstr ""
+"Ser voluntário pelo Just mostrou-me um lado do Porto que nem sempre está "
+"visível. Fico muito feliz pela oportunidade de poder ajudar a melhorar as "
+"condições das habitações de pessoas que tanto precisam."
+
+#: page-templates/page-volunteers.php:117
+msgid ""
+"Thank you so much for the warm welcome and patience you had with me. the "
+"kindness i’ve been met with while visiting lisbon has gone unmatched to "
+"anywhere else i’ve traveled, so now i really do appreciate this opportunity "
+"to work alongside you."
+msgstr ""
+"Muito obrigada pela calorosa receção e paciência. Diverti-me muito a "
+"trabalhar convosco. A bondade e gentileza que encontrei ao visitar Lisboa "
+"foram inigualáveis comparado com qualquer outro lugar do mundo que já "
+"visitei."
+
+#: page-templates/page-volunteers.php:132
+msgid ""
+"For me, Little Nothings is a way to bring joy to people by helping them have a "
+"better home."
+msgstr ""
+"Para mim o Little Nothings é uma forma de levarmos alegria às pessoas ajudando-"
+"as a ter um lar com melhores condições."
+
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultado da busca por: %s"
+
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pronto para publicar seu primeiro post? <a href=\"%1$s\">Comece aqui</a>."
+
+#: template-parts/content.php:40
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Continuar lendo<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: template-parts/site-sidenav.php:20
+msgid "Contacts"
+msgstr "Contatos"
+
+#: template-parts/site-sidenav.php:23
+msgid "Direct Debit Conditions"
+msgstr "Condições de Débito Directo"
+
+#: template-parts/site-sidenav.php:26
+msgid "Transparency"
+msgstr "Transparência"
+
+#: template-parts/site-sidenav.php:29
+msgid "Privacy Policy"
+msgstr "Política de Privacidade"
+
+#: template-parts/site-sidenav.php:31
+msgid "Documents"
+msgstr "Documentos"
+
+#: template-parts/site-sidenav.php:34
+msgid "Activities plan"
+msgstr "Plano de Atividades"
+
+#: template-parts/site-sidenav.php:35
+msgid "Impact report"
+msgstr "Relatório de Impacto"
+
+#: template-parts/site-sidenav.php:36
+msgid "Social entities"
+msgstr "Órgãos Sociais"
+
+#: template-parts/site-sidenav.php:37
+msgid "Statutes"
+msgstr "Estatutos"
+
+#: template-parts/site-sidenav.php:38
+msgid "IPSS recognition"
+msgstr "Reconhecimento IPSS"
+
+#: template-parts/site-sidenav.php:39
+msgid "Volunteer Code of Conduct"
+msgstr "Código de Conduta do Voluntário"
+
+#: template-parts/site-sidenav.php:40
+msgid "Graphic Standards Manual"
+msgstr "Manual de Normas Gráficas"
+
+#~ msgid "Lisbon"
+#~ msgstr "Lisboa"
+
+#, fuzzy
+#~| msgid "Copyright © 2020 Integer Consulting All rights Reserved."
+#~ msgid "Copyright © 2021 Integer Consulting All rights Reserved."
+#~ msgstr "Copyright © 2020 Integer Consulting Todos os direitos reservados."
+
+#~ msgid "View All"
+#~ msgstr "Ver tudo"
+
+#~ msgid "Opportunities"
+#~ msgstr "Oportunidades"
+
+#~ msgid "Opportunity"
+#~ msgstr "Oportunidade"
+
+#~ msgid "New opportunity"
+#~ msgstr "Nova oportunidade"
+
+#~ msgid "Edit opportunity"
+#~ msgstr "Editar oportunidade"
+
+#~ msgid "New"
+#~ msgstr "Novo"
+
+#~ msgid "All New opportunities"
+#~ msgstr "Todas as oportunidades"
+
+#~ msgid "See New opportunity"
+#~ msgstr "Visualizar oportunidade"
+
+#~ msgid "Search for New opportunity"
+#~ msgstr "Buscar por oportunidade"
+
+#~ msgid "Nothing found"
+#~ msgstr "Nada encontrado"
+
+#~ msgid "Nothing found on trash"
+#~ msgstr "Nada encontrado na lixeira"
+
+#~ msgid "Opportunity types"
+#~ msgstr "Tipos de oportunidade"
+
+#~ msgid "Opportunity type"
+#~ msgstr "Tipo de oportunidade"
+
+#~ msgid "Search"
+#~ msgstr "Busca"
+
+#~ msgid "Enter your email, we'll get in touch with you"
+#~ msgstr "Digite seu e-mail, entraremos em contato"
+
+#~ msgid "Check our blog"
+#~ msgstr "Verifique nosso blog"
+
+#~ msgid "while you're"
+#~ msgstr "enquanto você está"
+
+#~ msgid "in"
+#~ msgstr "em"
+
+#~ msgid "All Articles"
+#~ msgstr "Todos os artigos"
+
+#~ msgid "We believe in"
+#~ msgstr "Nós acreditamos em"
+
+#~ msgid "talent"
+#~ msgstr "talento"
+
+#~ msgid "you"
+#~ msgstr "você"
+
+#~ msgid "View all openings"
+#~ msgstr "Ver todas as vagas"
+
+#~ msgid "Language"
+#~ msgstr "Idioma"
+
+#~ msgid "We can help you, even with ideas."
+#~ msgstr "Podemos ajudá-lo, até com ideias."
+
+#~ msgid "Let's talk about your future."
+#~ msgstr "Vamos falar sobre o seu futuro."
+
+#~ msgid "Get in touch with us."
+#~ msgstr "Entre em contato conosco."
+
+#~ msgid "Solutions"
+#~ msgstr "Soluções"
+
+#~ msgid "Company"
+#~ msgstr "Empresa"
+
+#~ msgid "Legal & Policy"
+#~ msgstr "Legal e Política"
+
+#~ msgid "We believe"
+#~ msgstr "Nós acreditamos"
+
+#~ msgid "We are doing"
+#~ msgstr "Nós estamos fazendo"
+
+#~ msgid "it"
+#~ msgstr "isso"
+
+#~ msgid "together"
+#~ msgstr "juntos"
+
+#~ msgid "Get ready to change things in your"
+#~ msgstr "Prepare-se para mudar as coisas em seu"
+
+#~ msgid "business"
+#~ msgstr "negócio"
+
+#~ msgid "Outsourcing"
+#~ msgstr "Terceirização"
+
+#~ msgid "Services"
+#~ msgstr "Serviços"
+
+#~ msgid "Learn More"
+#~ msgstr "Aprenda mais"
+
+#~ msgid "Software"
+#~ msgstr "Software"
+
+#~ msgid "Nearshore"
+#~ msgstr "Nearshore"
+
+#~ msgid "Center"
+#~ msgstr "Centro"
+
+#~ msgid "Tailor Made"
+#~ msgstr "Feito sob medida"
+
+#~ msgid "We are trusted by"
+#~ msgstr "Temos a confiança de"
+
+#~ msgid "Clients & Projects"
+#~ msgstr "Clientes e Projetos"
+
+#~ msgid "Tech Expertise"
+#~ msgstr "Tech Expertise"
+
+#~ msgid "Team Members"
+#~ msgstr "Membros da equipa"
+
+#~ msgid "Years of Experience"
+#~ msgstr "Anos de experiência"
+
+#~ msgid "We have"
+#~ msgstr "Nós temos"
+
+#~ msgid "tech"
+#~ msgstr "tech"
+
+#~ msgid "We've got your back"
+#~ msgstr "Nós protegemos você"
+
+#~ msgid "Latest openings"
+#~ msgstr "Últimas vagas"
+
+#~ msgid "Looking for new challenges?"
+#~ msgstr "Procurando por novos desafios?"
+
+#~ msgid "That's were we come in."
+#~ msgstr "É aí que nós entramos."
+
+#~ msgid "Click here to upload your CV / Resume"
+#~ msgstr "Clique aqui para enviar seu currículo"
+
+#~ msgid "Sidebar"
+#~ msgstr "Barra lateral"
+
+#~ msgid "Previous:"
+#~ msgstr "Anterior:"
+
+#~ msgid "Next:"
+#~ msgstr "Próximo:"
+
+#~ msgid "Pages:"
+#~ msgstr "Páginas:"
+
+#~ msgid ""
+#~ "We believe <span class=\"font-weight-bolder\">in</span> talent.<br> We "
+#~ "are doing <span class=\"font-weight-bolder\">it</span> together"
+#~ msgstr ""
+#~ "Nós acreditamos <span class=\"font-weight-bolder\">em</span> talento.<br> "
+#~ "Estamos fazendo <span class=\"font-weight-bolder\">isso</span> juntos"

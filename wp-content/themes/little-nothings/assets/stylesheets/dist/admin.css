@@ -1,0 +1,31 @@
+#toplevel_page_integer-theme-general-settings {}
+#toplevel_page_integer-theme-general-settings .wp-menu-image.dashicons-before img{
+    max-width: 20px !important;
+}
+
+.ui-autocomplete {
+    max-height: 300px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+ */
+* html .ui-autocomplete {
+    height: 300px;
+}
+
+.ui-autocomplete .ui-menu-item .ui-menu-item-wrapper{
+    padding: 5px;
+}
+
+.ui-autocomplete .ui-menu-item .ui-menu-item-wrapper.ui-state-active{
+    background: #007cba;
+    color: #fff;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 500px white inset !important;
+}
+

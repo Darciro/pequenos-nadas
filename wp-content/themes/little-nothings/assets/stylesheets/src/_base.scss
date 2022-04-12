@@ -1,0 +1,344 @@
+/******************************************************************************/
+/*  Variables                                                                 */
+/******************************************************************************/
+/// Regular font family
+$text-font-primary: 'Open Sans', sans-serif;
+$text-font-featured: 'Source Sans Pro', sans-serif;
+
+/// Color Palette
+$text-color: #2C2C2C !default;
+$primary-color: rgb(28, 132, 85) !default;
+$primary-color-light: rgb(46, 159, 93) !default;
+$primary-color-lighter: #86c091 !default;
+$secondary-color: #36a2f9 !default;
+$secondary-color-darker: #243c6b !default;
+$tertiary-color: #fbbf4c !default;
+$tertiary-color-light: #f3fee6 !default;
+$blue-color: #0e315e !default;
+$blue-color-light: #30a0e3 !default;
+$orange-color: #ef7f1a !default;
+$purple-color: #ae4a84 !default;
+$green-color: #0e9846 !default;
+$green-color-light: #bccf17 !default;
+
+/// Grey Palette
+$light-grey: #F5F5F5 !default;
+$mid-grey: #727272 !default;
+$dark-grey: #2C2C2C !default;
+
+/// Grey Palette
+$success-color: #2dcc70 !default;
+$danger-color: #fb7d58 !default;
+$warning-color: #fbbf4c !default;
+$warning-color-darker: #e57022 !default;
+
+/// Relative or absolute URL where all assets are served from
+$assets-url: '../../../assets/' !default;
+$caret-down-svg: 'data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>';
+$caret-down-svg-green: 'data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="rgb(28, 132, 85)" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>';
+$caret-down-svg-white: 'data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="rgb(255, 255, 255)" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>';
+
+/******************************************************************************/
+/*  Mixins                                                                    */
+/******************************************************************************/
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/******************************************************************************/
+/*  Functions                                                                 */
+/******************************************************************************/
+// animate__delay-50ms to animate__delay-1000ms
+@for $i from 1 through 20 {
+  $miliseconds: ($i * 50);
+  .animate__animated.animate__delay-#{$miliseconds}ms {
+    -webkit-animation-delay: #{$miliseconds}ms;
+    animation-delay: #{$miliseconds}ms;
+    -webkit-animation-delay: #{$miliseconds}ms;
+    animation-delay: #{$miliseconds}ms;
+  }
+}
+
+/******************************************************************************/
+/*  Animations                                                                */
+/******************************************************************************/
+@keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: 9px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes top-2 {
+  0% {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 9px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 9px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 9px;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 9px;
+    transform: rotate(135deg);
+  }
+  50% {
+    bottom: 9px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/******************************************************************************/
+/*  Globals                                                                   */
+/******************************************************************************/
+body {
+  font-family: $text-font-primary;
+
+  .sidenav-overlay {
+    @include transition(opacity .25s ease-in-out);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    height: 120vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 997;
+    display: none;
+  }
+
+  &.sidebar-menu-active {
+    overflow: hidden;
+
+    .sidenav-overlay {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+.row {
+  &.cols-same-height {
+    @include media-breakpoint-up(lg) {
+      overflow: hidden;
+
+      [class*="col-"] {
+        margin-bottom: -99999px !important;
+        padding-bottom: 99999px !important;
+      }
+    }
+  }
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shadow-inset {
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.shadowless {
+  box-shadow: none !important;
+}
+
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
+
+.animate__animated {
+  visibility: hidden;
+
+  &.animated {
+    visibility: visible;
+  }
+}
+
+.vh-60{
+  height: 60vh;
+}
+
+.vh-85 {
+  height: 85vh;
+
+  @include media-breakpoint-down(sm) {
+    height: 100vh;
+  }
+}
+
+.mw-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.mw-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+  max-width: 992px;
+}
+
+.borderless {
+  border: none !important;
+}
+
+/******************************************************************************/
+/*  Utilities                                                                 */
+/******************************************************************************/
+.text-font-featured {
+  font-family: $text-font-featured;
+}
+
+.text-green {
+  color: $primary-color;
+}
+
+.text-green-light {
+  color: $primary-color-light;
+}
+
+.text-green-lighter {
+  color: $primary-color-lighter;
+}
+
+.text-blue-darker {
+  color: $secondary-color-darker;
+}
+
+.bg-green {
+  background-color: $primary-color;
+}
+
+.bg-green-light {
+  background-color: $primary-color-light;
+}
+
+.bg-green-lighter {
+  background-color: $primary-color-lighter;
+}
+
+.bg-blue {
+  background-color: $secondary-color;
+}
+
+.bg-warning {
+  background-color: $warning-color;
+}
+
+.bg-warning-darker {
+  background-color: $warning-color-darker;
+}
+
+.z-index-0 {
+  z-index: 0;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.animate__animated {
+  visibility: hidden;
+
+  &.animated {
+    visibility: visible;
+  }
+}
+
+#page {
+  overflow: hidden;
+}
+
+body {
+  font-family: $text-font-primary;
+
+  .sidenav-overlay {
+    @include transition(opacity .25s ease-in-out);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    height: 120vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 997;
+    display: none;
+  }
+
+  &.sidebar-menu-active {
+    overflow: hidden !important;
+
+    .sidenav-overlay {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
