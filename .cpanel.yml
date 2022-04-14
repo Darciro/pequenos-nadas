@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export /home/zjjcqqt3u2bd/public_html/projects/pequenos-nadas/
-    - /bin/cp -R * $DEPLOYPATH

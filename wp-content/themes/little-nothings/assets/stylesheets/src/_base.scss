@@ -2,7 +2,7 @@
 /*  Variables                                                                 */
 /******************************************************************************/
 /// Regular font family
-$text-font-primary: 'Open Sans', sans-serif;
+$text-font-primary: 'Poppins', sans-serif;
 $text-font-featured: 'Source Sans Pro', sans-serif;
 
 /// Color Palette
@@ -20,6 +20,8 @@ $orange-color: #ef7f1a !default;
 $purple-color: #ae4a84 !default;
 $green-color: #0e9846 !default;
 $green-color-light: #bccf17 !default;
+$pn-yellow: #fbed00 !default;
+$pn-red: #e31e25 !default;
 
 /// Grey Palette
 $light-grey: #F5F5F5 !default;
@@ -160,6 +162,7 @@ $caret-down-svg-white: 'data:image/svg+xml;utf8,<svg aria-hidden="true" focusabl
 /******************************************************************************/
 body {
   font-family: $text-font-primary;
+  font-size: 20px;
 
   .sidenav-overlay {
     @include transition(opacity .25s ease-in-out);
@@ -317,28 +320,12 @@ body {
   overflow: hidden;
 }
 
-body {
-  font-family: $text-font-primary;
-
-  .sidenav-overlay {
-    @include transition(opacity .25s ease-in-out);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    height: 120vh;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 997;
-    display: none;
-  }
-
-  &.sidebar-menu-active {
-    overflow: hidden !important;
-
-    .sidenav-overlay {
-      display: block;
-      opacity: 1;
-    }
-  }
+.section-subtitle {
+  /*background: #30a0e3;*/
+  background: #0d6efd;
+  display: inline-block;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 5px 20px;
 }
