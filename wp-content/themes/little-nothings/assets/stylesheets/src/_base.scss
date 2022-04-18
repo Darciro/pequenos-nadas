@@ -7,32 +7,18 @@ $text-font-featured: 'Source Sans Pro', sans-serif;
 
 /// Color Palette
 $text-color: #2C2C2C !default;
-$primary-color: rgb(28, 132, 85) !default;
-$primary-color-light: rgb(46, 159, 93) !default;
-$primary-color-lighter: #86c091 !default;
-$secondary-color: #36a2f9 !default;
-$secondary-color-darker: #243c6b !default;
-$tertiary-color: #fbbf4c !default;
-$tertiary-color-light: #f3fee6 !default;
-$blue-color: #0e315e !default;
-$blue-color-light: #30a0e3 !default;
-$orange-color: #ef7f1a !default;
-$purple-color: #ae4a84 !default;
-$green-color: #0e9846 !default;
-$green-color-light: #bccf17 !default;
-$pn-yellow: #fbed00 !default;
-$pn-red: #e31e25 !default;
+$little-purple: #ae4a84 !default;
+$little-blue: #30a1e3 !default;
+$little-green: #0e9846 !default;
+$little-light-green: #bccf17 !default;
+$little-orange: #ef801d !default;
+$little-yellow: #fbed00 !default;
+$little-red: #e31e25 !default;
 
 /// Grey Palette
 $light-grey: #F5F5F5 !default;
 $mid-grey: #727272 !default;
 $dark-grey: #2C2C2C !default;
-
-/// Grey Palette
-$success-color: #2dcc70 !default;
-$danger-color: #fb7d58 !default;
-$warning-color: #fbbf4c !default;
-$warning-color-darker: #e57022 !default;
 
 /// Relative or absolute URL where all assets are served from
 $assets-url: '../../../assets/' !default;
@@ -81,22 +67,22 @@ $caret-down-svg-white: 'data:image/svg+xml;utf8,<svg aria-hidden="true" focusabl
     transform: rotate(0);
   }
   50% {
-    top: 9px;
+    top: 10px;
     transform: rotate(0);
   }
   100% {
-    top: 9px;
+    top: 10px;
     transform: rotate(45deg);
   }
 }
 
 @keyframes top-2 {
   0% {
-    top: 9px;
+    top: 10px;
     transform: rotate(45deg);
   }
   50% {
-    top: 9px;
+    top: 10px;
     transform: rotate(0deg);
   }
   100% {
@@ -111,22 +97,22 @@ $caret-down-svg-white: 'data:image/svg+xml;utf8,<svg aria-hidden="true" focusabl
     transform: rotate(0);
   }
   50% {
-    bottom: 9px;
+    bottom: 10px;
     transform: rotate(0);
   }
   100% {
-    bottom: 9px;
+    bottom: 10px;
     transform: rotate(135deg);
   }
 }
 
 @keyframes bottom-2 {
   0% {
-    bottom: 9px;
+    bottom: 10px;
     transform: rotate(135deg);
   }
   50% {
-    bottom: 9px;
+    bottom: 10px;
     transform: rotate(0);
   }
   100% {
@@ -172,7 +158,7 @@ body {
     right: 0;
     opacity: 0;
     height: 120vh;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 997;
     display: none;
   }
@@ -187,70 +173,24 @@ body {
   }
 }
 
-.row {
-  &.cols-same-height {
-    @include media-breakpoint-up(lg) {
-      overflow: hidden;
-
-      [class*="col-"] {
-        margin-bottom: -99999px !important;
-        padding-bottom: 99999px !important;
-      }
-    }
-  }
-}
-
-.row-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.shadow-inset {
-  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.175) !important;
-}
-
-.shadowless {
-  box-shadow: none !important;
-}
-
-.mb-6 {
-  margin-bottom: 6rem !important;
-}
-
 .animate__animated {
   visibility: hidden;
 
   &.animated {
     visibility: visible;
   }
-}
 
-.vh-60{
-  height: 60vh;
-}
-
-.vh-85 {
-  height: 85vh;
-
-  @include media-breakpoint-down(sm) {
-    height: 100vh;
+  @include media-breakpoint-down(lg) {
+    visibility: visible;
   }
-}
-
-.mw-6 {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.mw-8 {
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%;
-  max-width: 992px;
 }
 
 .borderless {
   border: none !important;
+}
+
+#page {
+  overflow: hidden;
 }
 
 /******************************************************************************/
@@ -258,46 +198,6 @@ body {
 /******************************************************************************/
 .text-font-featured {
   font-family: $text-font-featured;
-}
-
-.text-green {
-  color: $primary-color;
-}
-
-.text-green-light {
-  color: $primary-color-light;
-}
-
-.text-green-lighter {
-  color: $primary-color-lighter;
-}
-
-.text-blue-darker {
-  color: $secondary-color-darker;
-}
-
-.bg-green {
-  background-color: $primary-color;
-}
-
-.bg-green-light {
-  background-color: $primary-color-light;
-}
-
-.bg-green-lighter {
-  background-color: $primary-color-lighter;
-}
-
-.bg-blue {
-  background-color: $secondary-color;
-}
-
-.bg-warning {
-  background-color: $warning-color;
-}
-
-.bg-warning-darker {
-  background-color: $warning-color-darker;
 }
 
 .z-index-0 {
@@ -308,24 +208,88 @@ body {
   z-index: 1;
 }
 
-.animate__animated {
-  visibility: hidden;
+.bg-purple {
+  background-color: $little-purple;
+}
 
-  &.animated {
-    visibility: visible;
+.bg-blue {
+  background-color: $little-blue;
+}
+
+.bg-green {
+  background-color: $little-green;
+}
+
+.bg-light-green {
+  background-color: $little-light-green;
+}
+
+.bg-orange {
+  background-color: $little-orange;
+}
+
+.bg-yellow {
+  background-color: $little-yellow;
+}
+
+.bg-red {
+  background-color: $little-red;
+}
+
+.bg-pattern-circles {
+  background-image: radial-gradient(circle at 47% 14%,
+          rgba(205, 205, 205, 0.04) 0%,
+          rgba(205, 205, 205, 0.04) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 35% 12%,
+          rgba(215, 215, 215, 0.04) 0%,
+          rgba(215, 215, 215, 0.04) 4%, transparent 4%, transparent 100%), radial-gradient(circle at 1% 35%,
+          rgba(24, 24, 24, 0.04) 0%,
+          rgba(24, 24, 24, 0.04) 37%, transparent 37%, transparent 100%), radial-gradient(circle at 21% 1%,
+          rgba(0, 0, 0, 0.04) 0%,
+          rgba(0, 0, 0, 0.04) 26%, transparent 26%, transparent 100%), radial-gradient(circle at 23% 82%,
+          rgba(249, 249, 249, 0.04) 0%,
+          rgba(249, 249, 249, 0.04) 60%, transparent 60%, transparent 100%), radial-gradient(circle at 11% 54%,
+          rgba(251, 251, 251, 0.04) 0%,
+          rgba(251, 251, 251, 0.04) 23%, transparent 23%, transparent 100%), radial-gradient(circle at 69% 68%,
+          rgba(234, 234, 234, 0.04) 0%,
+          rgba(234, 234, 234, 0.04) 10%, transparent 10%, transparent 100%), linear-gradient(90deg, lighten($little-purple, 10%), $little-purple);
+
+  &.green-circles {
+    background-image: radial-gradient(circle at 47% 14%,
+            rgba(205, 205, 205, 0.04) 0%,
+            rgba(205, 205, 205, 0.04) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 45% 22%,
+            rgba(215, 215, 215, 0.04) 0%,
+            rgba(215, 215, 215, 0.04) 4%, transparent 4%, transparent 100%), radial-gradient(circle at 11% 45%,
+            rgba(24, 24, 24, 0.04) 0%,
+            rgba(24, 24, 24, 0.04) 37%, transparent 37%, transparent 100%), radial-gradient(circle at 31% 11%,
+            rgba(0, 0, 0, 0.04) 0%,
+            rgba(0, 0, 0, 0.04) 26%, transparent 26%, transparent 100%), radial-gradient(circle at 33% 92%,
+            rgba(249, 249, 249, 0.04) 0%,
+            rgba(249, 249, 249, 0.04) 60%, transparent 60%, transparent 100%), radial-gradient(circle at 21% 64%,
+            rgba(251, 251, 251, 0.04) 0%,
+            rgba(251, 251, 251, 0.04) 23%, transparent 23%, transparent 100%), radial-gradient(circle at 79% 78%,
+            rgba(234, 234, 234, 0.04) 0%,
+            rgba(234, 234, 234, 0.04) 10%, transparent 10%, transparent 100%), linear-gradient(90deg, lighten($little-green, 10%), $little-green);
+  }
+
+  &.red-circles {
+    background-image: radial-gradient(circle at 47% 14%,
+            rgba(205, 205, 205, 0.04) 0%,
+            rgba(205, 205, 205, 0.04) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 15% 2%,
+            rgba(215, 215, 215, 0.04) 0%,
+            rgba(215, 215, 215, 0.04) 4%, transparent 4%, transparent 100%), radial-gradient(circle at 11% 25%,
+            rgba(24, 24, 24, 0.04) 0%,
+            rgba(24, 24, 24, 0.04) 37%, transparent 37%, transparent 100%), radial-gradient(circle at 31% 11%,
+            rgba(0, 0, 0, 0.04) 0%,
+            rgba(0, 0, 0, 0.04) 26%, transparent 26%, transparent 100%), radial-gradient(circle at 33% 62%,
+            rgba(249, 249, 249, 0.04) 0%,
+            rgba(249, 249, 249, 0.04) 60%, transparent 60%, transparent 100%), radial-gradient(circle at 1% 34%,
+            rgba(251, 251, 251, 0.04) 0%,
+            rgba(251, 251, 251, 0.04) 23%, transparent 23%, transparent 100%), radial-gradient(circle at 69% 68%,
+            rgba(234, 234, 234, 0.04) 0%,
+            rgba(234, 234, 234, 0.04) 10%, transparent 10%, transparent 100%), linear-gradient(90deg, lighten($little-red, 10%), $little-red);
   }
 }
 
-#page {
-  overflow: hidden;
-}
-
-.section-subtitle {
-  /*background: #30a0e3;*/
-  background: #0d6efd;
-  display: inline-block;
-  color: #fff;
-  border-radius: 30px;
-  font-size: 15px;
-  padding: 5px 20px;
+.shadow-md {
+  box-shadow: 0 3px 6px #00000029;
 }

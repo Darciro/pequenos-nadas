@@ -1,0 +1,191 @@
+.row > * {
+  @include media-breakpoint-down(md) {
+    padding-right: 37px;
+    padding-left: 37px;
+  }
+}
+
+#main-header {
+
+  .navbar {
+    @include transition(box-shadow .3s ease-in-out, background .3s ease-in-out);
+    background: #fff;
+
+    .container {
+      @include media-breakpoint-down(md) {
+        padding-right: 37px;
+        padding-left: 37px;
+      }
+    }
+
+    .nav-item {
+      @extend .ms-md-3;
+
+      .nav-link {
+        @extend .text-font-featured;
+        font-size: 16px;
+        text-transform: uppercase;
+        position: relative;
+        color: $text-color;
+
+        &:after {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 0;
+          background-color: $little-purple;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          @include transition(width .3s ease-in-out, color .3s ease-in-out);
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $little-purple;
+
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .admin-bar & {
+      &.fixed-top {
+        top: 32px !important;
+      }
+
+      &.fixed-top-sm {
+        top: 0 !important;
+      }
+    }
+  }
+
+  .colored-logo {
+    display: block;
+  }
+
+  .white-logo {
+    display: none;
+  }
+
+  .transparent-nav & {
+    .navbar {
+      background: none;
+
+      .nav-link {
+        color: #fff;
+
+        &:after {
+          background-color: #fff;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: #fff;
+        }
+      }
+    }
+
+    .colored-logo {
+      display: none;
+      opacity: 0;
+      @include transition(opacity .3s ease-in-out);
+    }
+
+    .white-logo {
+      display: block;
+      opacity: 1;
+      @include transition(opacity .3s ease-in-out);
+    }
+  }
+
+  #lang-dropdown-menu {
+    .btn {
+      color: #fff;
+    }
+
+    a {
+      color: #333
+    }
+  }
+}
+
+#menu-btn-toggler {
+  width: 35px;
+  height: 25px;
+  background: none !important;
+  padding: 0 !important;
+  border: none;
+  position: relative;
+  z-index: 1050;
+  box-shadow: none !important;
+
+  span {
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    height: 3px;
+    background-color: #2B2B2B;
+    position: relative;
+    @include transition(all .3s ease-in-out);
+  }
+
+  span + span {
+    margin-top: 7px;
+  }
+
+  .transparent-nav & {
+    span {
+      background-color: #fff;
+    }
+  }
+
+  &.active {
+    span {
+      background-color: $little-purple;
+    }
+  }
+
+  &.active span:nth-child(1) {
+    animation: ease .7s top forwards;
+  }
+
+  &.not-active span:nth-child(1) {
+    animation: ease .7s top-2 forwards;
+  }
+
+  &.active span:nth-child(2) {
+    animation: ease .7s scaled forwards;
+  }
+
+  &.not-active span:nth-child(2) {
+    animation: ease .7s scaled-2 forwards;
+  }
+
+  &.active span:nth-child(3) {
+    animation: ease .7s bottom forwards;
+  }
+
+  &.not-active span:nth-child(3) {
+    animation: ease .7s bottom-2 forwards;
+  }
+}
+
+#sidenav {
+  padding-top: 107px;
+
+  .navbar-nav {
+    margin: 0 !important;
+
+    .nav-link {
+      color: $little-purple !important;
+    }
+  }
+}
+
+#footer {}
+

@@ -38,13 +38,20 @@
     <a class="skip-link visually-hidden" href="#primary"><?php esc_html_e('Skip to content', 'just-a-change'); ?></a>
 
     <header id="main-header">
-        <nav class="navbar navbar-expand-lg fixed-top pt-0">
-            <div class="container-fluid">
-                <a class="navbar-brand m-0 p-3" href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" width="100" height="100" alt="Little Nothings" loading="lazy">
+        <nav class="navbar navbar-expand-lg fixed-top pt-0 pb-0">
+            <div class="container">
+                <a class="navbar-brand m-0 ps-0 p-3" href="<?php echo home_url(); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png" class="white-logo" width="75" height="75" alt="Little Nothings" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="colored-logo" width="75" height="75" alt="Little Nothings" loading="lazy">
                 </a>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <button id="menu-btn-toggler" class="inactive navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidenav" aria-controls="sidenav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="main-navbar">
                     <?php
                     /* wp_nav_menu(array(
                         'theme_location' => 'main-menu',
@@ -59,34 +66,33 @@
                     ?>
 
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item ms-2">
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="<?php echo home_url(); ?>#intro">Home</a>
                         </li>
-                        <li class="nav-item ms-2">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#about-us">Quem Somos</a>
                         </li>
-                        <li class="nav-item ms-2">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#collections">Edições</a>
                         </li>
-                        <li class="nav-item ms-2">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#projects">Projetos de Impacto</a>
                         </li>
-                        <li class="nav-item ms-2">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#team">Equipa</a>
                         </li>
-                        <li class="nav-item ms-2">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?php echo home_url('/events'); ?>#">Eventos</a>
                         </li>
-                        <li class="nav-item ms-2">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#">Noticias</a>
                         </li>
-                        <li class="nav-item ms-2">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#">Blog</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <?php get_template_part('template-parts/site', 'sidenav'); ?>
         </nav>
     </header>
-
-    <?php // get_template_part('template-parts/site', 'sidenav'); ?>
