@@ -10,6 +10,21 @@
     }
   }
 
+  #about-us {
+    .img-2 {
+      position: absolute;
+      z-index: 1;
+      bottom: -50px;
+      right: 50px;
+
+      @include media-breakpoint-down(md) {
+        bottom: -15px;
+        right: -15px;
+        width: 70%;
+      }
+    }
+  }
+
   #collections {
     #collections-carousel {
       margin-left: -15px;

@@ -42,7 +42,7 @@
         </ul>
 
         <button type="button" class="btn btn-primary mt-5">Contact Us</button>
-        <div class="mt-3">
+        <div class="mt-3 d-flex justify-content-start">
             <a href="#" class="social-icon shadow-sm me-3 rounded-circle bg-purple">
                 <?php echo get_icon('facebook', array('class' => 'facebook')); ?>
             </a>

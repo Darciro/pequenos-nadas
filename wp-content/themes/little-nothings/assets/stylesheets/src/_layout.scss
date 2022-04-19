@@ -9,6 +9,7 @@
 
   .navbar {
     @include transition(box-shadow .3s ease-in-out, background .3s ease-in-out);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .075) !important;
     background: #fff;
 
     .container {
@@ -74,6 +75,7 @@
   .transparent-nav & {
     .navbar {
       background: none;
+      box-shadow: none !important;
 
       .nav-link {
         color: #fff;
@@ -177,6 +179,12 @@
 
 #sidenav {
   padding-top: 107px;
+  max-width: 80%;
+
+  .offcanvas-body {
+    overflow-y: scroll;
+    height: 100%;
+  }
 
   .navbar-nav {
     margin: 0 !important;

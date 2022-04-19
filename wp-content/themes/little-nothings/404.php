@@ -12,49 +12,31 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'just-a-change' ); ?></h1>
-			</header><!-- .page-header -->
+        <article class="error-404 not-found">
+            <section class="content-header vh-50 position-relative" <?php echo has_post_thumbnail() ? 'style="background-image: url('. get_the_post_thumbnail_url() .');"' : ''; ?>>
+                <div class="container position-relative">
+                    <div class="row vh-50 justify-content-center align-items-center">
+                        <div class="justify-content-center align-self-center text-center mw-1100 mx-auto text-white mt-5 pt-5">
+                            <div class="section-heading pb-4 mb-4 mb-md-5">
+                                <span class="text-white section-subtitle animate__animated" data-animation="fadeInUp">404</span>
+                                <h2 class="display-1 text-white fw-bolder text-font-featured mt-4 animate__animated animate__delay-150ms" data-animation="fadeInUp"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'just-a-change' ); ?></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'just-a-change' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'just-a-change' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$just_a_change_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'just-a-change' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$just_a_change_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
+            <div class="entry-content py-5 mb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-8 text-center">
+                            <p>It looks like nothing was found at this location. Return to <a href="<?php echo home_url(); ?>">homepage</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+	</main>
 
 <?php
 get_footer();

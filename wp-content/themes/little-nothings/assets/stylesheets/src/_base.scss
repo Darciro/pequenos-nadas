@@ -150,6 +150,10 @@ body {
   font-family: $text-font-primary;
   font-size: 20px;
 
+  @include media-breakpoint-down(md) {
+    font-size: 15px;
+  }
+
   .sidenav-overlay {
     @include transition(opacity .25s ease-in-out);
     position: fixed;
@@ -171,6 +175,26 @@ body {
       opacity: 1;
     }
   }
+}
+
+.display-1 {
+  @include media-breakpoint-down(md) {
+    font-size: 37px !important;
+  }
+}
+
+.display-3 {
+  @include media-breakpoint-down(md) {
+    font-size: 32px !important;
+  }
+}
+
+.little-display-12 {
+  font-size: 12px !important;
+}
+
+.little-display-15 {
+  font-size: 15px !important;
 }
 
 .animate__animated {
@@ -236,6 +260,10 @@ body {
   background-color: $little-red;
 }
 
+.text-color-default {
+  color: $text-color !important;
+}
+
 .bg-pattern-circles {
   background-image: radial-gradient(circle at 47% 14%,
           rgba(205, 205, 205, 0.04) 0%,
@@ -292,4 +320,12 @@ body {
 
 .shadow-md {
   box-shadow: 0 3px 6px #00000029;
+}
+
+.vh-50 {
+  height: 50vh !important;
+}
+
+.vh-75 {
+  height: 75vh !important;
 }

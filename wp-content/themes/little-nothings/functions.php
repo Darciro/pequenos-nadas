@@ -9,18 +9,18 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.2.0' );
+	define( '_S_VERSION', '1.3.0' );
 }
 
-if ( ! function_exists( 'just_a_change_setup' ) ) :
+if ( ! function_exists( 'little_nothings_setup' ) ) :
 
-	function just_a_change_setup() {
+	function little_nothings_setup() {
 		load_theme_textdomain( 'just-a-change', get_template_directory() . '/languages' );
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
         add_image_size('banner', 1450, 550, true);
-        add_image_size('card-img-top', 350, 200, true);
+        add_image_size( 'card-img-top', 384, 240, true );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
@@ -33,7 +33,7 @@ if ( ! function_exists( 'just_a_change_setup' ) ) :
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'just_a_change_custom_background_args',
+				'little_nothings_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
@@ -45,14 +45,14 @@ if ( ! function_exists( 'just_a_change_setup' ) ) :
 		add_theme_support( 'customize-selective-refresh-widgets' );
 	}
 endif;
-add_action( 'after_setup_theme', 'just_a_change_setup' );
+add_action( 'after_setup_theme', 'little_nothings_setup' );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function just_a_change_widgets_init() {
+function little_nothings_widgets_init() {
     for ($i = 1; $i <= 4; $i++) {
         register_sidebar(
             array(
@@ -67,12 +67,12 @@ function just_a_change_widgets_init() {
         );
     }
 }
-add_action( 'widgets_init', 'just_a_change_widgets_init' );
+add_action( 'widgets_init', 'little_nothings_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function just_a_change_scripts() {
+function little_nothings_scripts() {
     $app_env = wp_get_environment_type();
     $bundle_css = ($app_env == 'local') ? 'bundle.css' : 'bundle.min.css';
     wp_enqueue_style('just-a-style', get_template_directory_uri() . '/assets/stylesheets/dist/' . $bundle_css, array(), _S_VERSION);
@@ -88,7 +88,7 @@ function just_a_change_scripts() {
         wp_enqueue_script('gmaps-markerclusterer', 'https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js', array('jquery'), _S_VERSION, true);
 	}
 }
-add_action( 'wp_enqueue_scripts', 'just_a_change_scripts' );
+add_action( 'wp_enqueue_scripts', 'little_nothings_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -213,4 +213,34 @@ add_action( 'pre_get_posts', 'lang_independent_home_query' );
  */
 function get_page_url_from_current_lang($page_slug) {
     return get_the_permalink(pll_get_post(get_page_by_path( $page_slug )->ID));
+}
+
+function prefix_category_title( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    }
+    return $title;
+}
+add_filter( 'get_the_archive_title', 'prefix_category_title' );
+
+/**
+ * Function to change the excerpt length
+ *
+ * @param int $limit
+ *
+ * @return string|string[]|null
+ */
+function get_little_nothings_excerpt( $limit = 190 ) {
+    $excerpt = explode( ' ', get_the_excerpt(), $limit );
+
+    if ( count( $excerpt ) >= $limit ) {
+        array_pop( $excerpt );
+        $excerpt = implode( " ", $excerpt ) . '...';
+    } else {
+        $excerpt = implode( " ", $excerpt );
+    }
+
+    $excerpt = preg_replace( '`\[[^\]]*\]`', '', $excerpt );
+
+    return $excerpt;
 }

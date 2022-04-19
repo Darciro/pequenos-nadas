@@ -67,28 +67,28 @@
 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="<?php echo home_url(); ?>#intro">Home</a>
+                            <a class="nav-link active" aria-current="page" href="<?php echo is_home() ? home_url() . '#intro' : home_url('/'); ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#about-us">Quem Somos</a>
+                            <a class="nav-link" aria-current="page" href="<?php echo is_home() ? home_url() . '#about-us' : home_url('/quem-somos'); ?>">Quem Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#collections">Edições</a>
+                            <a class="nav-link" aria-current="page" href="<?php echo is_home() ? home_url() . '#collections' : home_url('/edicoes'); ?>">Edições</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#projects">Projetos de Impacto</a>
+                            <a class="nav-link" aria-current="page" href="<?php echo is_home() ? home_url() . '#projects' : home_url('/projetos'); ?>">Projetos de Impacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#team">Equipa</a>
+                            <a class="nav-link" aria-current="page" href="<?php echo is_home() ? home_url() . '#team' : home_url('/equipa'); ?>">Equipa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo home_url('/events'); ?>#">Eventos</a>
+                            <a class="nav-link" aria-current="page" href="<?php echo home_url('/category/eventos'); ?>#">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#">Noticias</a>
+                            <a class="nav-link" aria-current="page" href="<?php echo home_url('/category/noticias'); ?>#">Noticias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo home_url(); ?>#">Blog</a>
+                            <a class="nav-link" aria-current="page" href="<?php echo home_url('/category/blog'); ?>#">Blog</a>
                         </li>
                     </ul>
                 </div>

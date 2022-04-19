@@ -9,6 +9,10 @@ a {
 .btn {
   padding: 0.5rem 2rem;
   border-radius: 2rem;
+
+  @include media-breakpoint-down(md) {
+    font-size: 15px !important;
+  }
 }
 
 .btn-primary {
@@ -31,6 +35,10 @@ a {
   border-radius: 30px;
   font-size: 15px;
   padding: 5px 20px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 12px !important;
+  }
 }
 
 .panel {
@@ -129,12 +137,14 @@ a {
   min-height: 75vh;
   color: #fff;
   position: relative;
+  @include transition(all .3s ease-in-out);
 
   @include media-breakpoint-down(lg) {
     min-height: 300px;
   }
 
   &:before {
+    @include transition(all .3s ease-in-out);
     content: '';
     display: block;
     position: absolute;
@@ -145,14 +155,30 @@ a {
     height: 100%;
     width: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, .75) 0%, transparent 100%);
+    backdrop-filter: grayscale(0.75) opacity(0.75);
   }
 
   .custom-card-body {
+    @include transition(padding .3s ease-in-out);
     position: relative;
+    padding: 15px;
 
     > * {
       position: relative;
       z-index: 1;
+    }
+  }
+
+  &:hover {
+    color: $little-yellow;
+    // backdrop-filter: grayscale(0.5) opacity(0.8);
+
+    &:before {
+      opacity: 0;
+    }
+
+    .custom-card-body {
+      padding-bottom: 30px;
     }
   }
 }
@@ -216,6 +242,7 @@ a {
   }
 
   .overlay {
+    @include transition(all .3s ease-in-out);
     position: absolute;
     top: 0;
     left: 0;
@@ -235,6 +262,7 @@ a {
   &:hover {
     .overlay {
       opacity: 1;
+      color: $little-yellow;
     }
 
     img {
@@ -264,6 +292,7 @@ a {
     left: -75px;
     top: 50%;
     margin-top: -25px;
+    z-index: 10;
 
     svg {
       height: 25px;
@@ -284,8 +313,7 @@ a {
 
     @include media-breakpoint-down(md) {
       left: 0;
-      top: auto;
-      bottom: 15px;
+      margin-top: -50px;
 
       &.slick-next {
         right: 0;
@@ -299,6 +327,7 @@ a {
   padding: 30px;
   background-color: #fff;
   border-radius: 60px;
+  position: relative;
 
   input {
     border-top-left-radius: 2rem;
@@ -308,11 +337,102 @@ a {
     border-color: #fff;
   }
 
+  .wpcf7-form-control-wrap {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+  }
+
   .btn {
-    // border-radius: 2rem !important
+    height: 42px;
+    padding-right: 52px;
     border-top-left-radius: 2rem !important;
     border-bottom-left-radius: 2rem !important;
-    background-color: $little-red;
     border-color: $little-red;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-color: $little-red;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-send'%3E%3Cline x1='22' y1='2' x2='11' y2='13'/%3E%3Cpolygon points='22 2 15 22 11 13 2 9 22 2'/%3E%3C/svg%3E");
+
+    @include media-breakpoint-down(md) {
+      padding: 0;
+      width: 42px;
+      background-position: center center;
+    }
+  }
+
+  .wpcf7-spinner {
+    // visibility: visible !important;
+    position: absolute;
+    margin: 0;
+    right: 13px;
+    top: 8px;
+    z-index: 10;
+    border-radius: 50% !important;
+    width: 26px;
+    height: 26px;
+    opacity: 1;
+  }
+
+  .wpcf7-not-valid-tip {
+    font-size: 12px;
+    padding-left: 12px;
+  }
+}
+
+.wpcf7 form.sent .wpcf7-response-output,
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+  margin: 30px 0 0 0;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+
+.content-header{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // background-image: url($assets-url + 'images/intro.webp');
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    z-index: 1;
+    background: #000000;
+  }
+
+  > .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.posts-navigation {
+  .nav-links {
+    @extend .d-flex;
+    @extend .justify-content-between;
+
+    .nav-previous,
+    .nav-next {
+      @extend .btn;
+      @extend .btn-primary;
+      @extend .btn-lg;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
   }
 }

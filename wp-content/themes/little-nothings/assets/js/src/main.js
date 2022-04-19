@@ -19,19 +19,19 @@
 
         toggleTransparentNav: function () {
             $(document).scroll(function () {
+                var $domBody = $('body');
                 if ($(window).scrollTop() === 0) {
-                    $('body').addClass('transparent-nav');
+                    $domBody.addClass('transparent-nav');
 
-                    if ($(window).width() <= 600 && $('body').hasClass('admin-bar')) {
-                        $('#main-header .navbar').removeClass('fixed-top-sm');
-                    } else {
-                        $('#main-header .navbar').addClass('fixed-top-sm');
+                    if( $(window).width() <= 600 ) {
+                        if ($domBody.hasClass('admin-bar'))
+                            $('#main-header .navbar').toggleClass('fixed-top-sm');
                     }
 
                 } else {
-                    $('body').removeClass('transparent-nav');
+                    $domBody.removeClass('transparent-nav');
 
-                    if ($(window).width() <= 600 && $('body').hasClass('admin-bar')) {
+                    if ($(window).width() <= 600 && $domBody.hasClass('admin-bar')) {
                         $('#main-header .navbar').addClass('fixed-top-sm');
                     } else {
                         $('#main-header .navbar').removeClass('fixed-top-sm');

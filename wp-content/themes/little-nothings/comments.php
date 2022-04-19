@@ -28,8 +28,8 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title display-5 text-font-just-nova text-center text-green mb-5">
 			<?php
-			$just_a_change_comment_count = get_comments_number();
-			if ( '1' === $just_a_change_comment_count ) {
+			$little_nothings_comment_count = get_comments_number();
+			if ( '1' === $little_nothings_comment_count ) {
 				printf(
 					/* translators: 1: title. */
 					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'just-a-change' ),
@@ -38,8 +38,8 @@ if ( post_password_required() ) {
 			} else {
 				printf( 
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $just_a_change_comment_count, 'comments title', 'just-a-change' ) ),
-					number_format_i18n( $just_a_change_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $little_nothings_comment_count, 'comments title', 'just-a-change' ) ),
+					number_format_i18n( $little_nothings_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			}
