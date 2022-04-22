@@ -9,6 +9,7 @@ $text-font-featured: 'Source Sans Pro', sans-serif;
 $text-color: #2C2C2C !default;
 $little-purple: #ae4a84 !default;
 $little-blue: #30a1e3 !default;
+$little-dark-blue: #05315e !default;
 $little-green: #0e9846 !default;
 $little-light-green: #bccf17 !default;
 $little-orange: #ef801d !default;
@@ -42,6 +43,17 @@ $caret-down-svg-white: 'data:image/svg+xml;utf8,<svg aria-hidden="true" focusabl
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin grayscale_element($value) {
+  -webkit-filter: #{"grayscale(#{$value})"};
+  -moz-filter: #{"grayscale(#{$value})"};
+  filter:#{"grayscale(#{$value})"};
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color; /* The Fallback */
+  background: rgba($color, $opacity);
 }
 
 /******************************************************************************/
@@ -217,6 +229,12 @@ body {
   overflow: hidden;
 }
 
+.fs-sm-15 {
+  @include media-breakpoint-down(md) {
+    font-size: 15px !important;
+  }
+}
+
 /******************************************************************************/
 /*  Utilities                                                                 */
 /******************************************************************************/
@@ -328,4 +346,85 @@ body {
 
 .vh-75 {
   height: 75vh !important;
+}
+
+#logo-svg {
+  .purple{
+    @include transition(fill .15s ease-in-out);
+    fill: $little-purple;
+  }
+
+  .blue{
+    @include transition(fill .30s ease-in-out);
+    fill: $little-blue;
+  }
+
+  .green{
+    @include transition(fill .45s ease-in-out);
+    fill: $little-green;
+  }
+
+  .light-green{
+    @include transition(fill .60s ease-in-out);
+    fill: $little-light-green;
+  }
+
+  .yellow{
+    @include transition(fill .75s ease-in-out);
+    fill: $little-yellow;
+  }
+
+  .orange{
+    @include transition(fill .90s ease-in-out);
+    fill: $little-orange;
+  }
+
+  .red{
+    @include transition(fill 1.05s ease-in-out);
+    fill: $little-red;
+  }
+
+  &.white {
+    .purple,
+    .light-green,
+    .blue,
+    .green,
+    .orange,
+    .yellow,
+    .red{
+      fill: #fff;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      .purple{
+        fill: $little-purple;
+      }
+
+      .blue{
+        fill: $little-blue;
+      }
+
+      .green{
+        fill: $little-green;
+      }
+
+      .light-green{
+        fill: $little-light-green;
+      }
+
+      .yellow{
+        fill: $little-yellow;
+      }
+
+      .orange{
+        fill: $little-orange;
+      }
+
+      .red{
+        fill: $little-red;
+      }
+    }
+  }
 }

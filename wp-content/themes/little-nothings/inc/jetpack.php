@@ -33,7 +33,7 @@ function little_nothings_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'just-a-change-style',
+				'stylesheet' => 'little-nothings-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',

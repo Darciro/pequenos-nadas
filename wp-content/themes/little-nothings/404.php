@@ -19,7 +19,7 @@ get_header();
                         <div class="justify-content-center align-self-center text-center mw-1100 mx-auto text-white mt-5 pt-5">
                             <div class="section-heading pb-4 mb-4 mb-md-5">
                                 <span class="text-white section-subtitle animate__animated" data-animation="fadeInUp">404</span>
-                                <h2 class="display-1 text-white fw-bolder text-font-featured mt-4 animate__animated animate__delay-150ms" data-animation="fadeInUp"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'just-a-change' ); ?></h2>
+                                <h2 class="display-1 text-white fw-bolder text-font-featured mt-4 animate__animated animate__delay-150ms" data-animation="fadeInUp"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'little-nothings' ); ?></h2>
                             </div>
                         </div>
                     </div>

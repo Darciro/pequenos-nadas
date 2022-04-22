@@ -14,7 +14,8 @@
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/favicon-32x32.png">
@@ -32,67 +33,43 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('transparent-nav'); ?>>
+<?php $default_class = is_home() ? 'transparent-nav loading' : 'transparent-nav'; ?>
+<body <?php body_class($default_class); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-    <a class="skip-link visually-hidden" href="#primary"><?php esc_html_e('Skip to content', 'just-a-change'); ?></a>
-
+<div id="viewport">
+    <a class="skip-link visually-hidden" href="#primary"><?php esc_html_e('Skip to content', 'little-nothings'); ?></a>
     <header id="main-header">
-        <nav class="navbar navbar-expand-lg fixed-top pt-0 pb-0">
-            <div class="container">
-                <a class="navbar-brand m-0 ps-0 p-3" href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png" class="white-logo" width="75" height="75" alt="Little Nothings" loading="lazy">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="colored-logo" width="75" height="75" alt="Little Nothings" loading="lazy">
+        <nav class="navbar navbar-expand-xs fixed-top pt-0 pb-0">
+            <div class="container-fluid">
+                <a class="navbar-brand m-0 p-3" href="<?php echo home_url(); ?>">
+                    <?php echo get_icon('logo', array('class' => 'logo-svg white')); ?>
                 </a>
 
-                <button id="menu-btn-toggler" class="inactive navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidenav" aria-controls="sidenav">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="main-navbar">
+                <div class="collapse show navbar-collapse" id="main-navbar">
                     <?php
-                    /* wp_nav_menu(array(
+                     wp_nav_menu(array(
                         'theme_location' => 'main-menu',
                         'depth' => 2,
                         'container' => '',
                         'menu_id' => 'main-navigation',
-                        'menu_class' => 'navbar-nav mx-auto',
+                        'menu_class' => 'navbar-nav ms-auto',
                         'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-                        'items_wrap' => '<ul id="%1$s" class="%2$s text-font-just-nova">%3$s</ul>',
+                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                         'walker' => new WP_Bootstrap_Navwalker(),
-                    ));*/
+                    ));
                     ?>
-
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="<?php echo is_home() ? home_url() . '#intro' : home_url('/'); ?>">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo is_home() ? home_url() . '#about-us' : home_url('/quem-somos'); ?>">Quem Somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo is_home() ? home_url() . '#collections' : home_url('/edicoes'); ?>">Edições</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo is_home() ? home_url() . '#projects' : home_url('/projetos'); ?>">Projetos de Impacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo is_home() ? home_url() . '#team' : home_url('/equipa'); ?>">Equipa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo home_url('/category/eventos'); ?>#">Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo home_url('/category/noticias'); ?>#">Noticias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?php echo home_url('/category/blog'); ?>#">Blog</a>
-                        </li>
-                    </ul>
                 </div>
+
+                <button id="menu-btn-toggler" class="inactive navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidenav" aria-controls="sidenav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <small class="label">Menu</small>
+                    <small class="close-label"><?php echo pll_current_language() === 'pt' ? 'Fechar' : 'Close'; ?></small>
+                </button>
+
+                <?php get_template_part('template-parts/site', 'sidenav'); ?>
             </div>
-            <?php get_template_part('template-parts/site', 'sidenav'); ?>
         </nav>
     </header>
+    <div id="scroll-view" class="site">

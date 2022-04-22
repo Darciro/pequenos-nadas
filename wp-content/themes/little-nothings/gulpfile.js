@@ -49,6 +49,7 @@ gulp.task('js', function () {
             path.node + 'gsap/dist/ScrollTrigger.js',
             path.node + 'jquery-mask-plugin/dist/jquery.mask.js',
             path.node + 'slick-carousel/slick/slick.min.js',
+            path.node + 'locomotive-scroll/dist/locomotive-scroll.min.js',
             path.jsSourceFolder + '*.js',
             '!' + path.jsSourceFolder + 'admin.js'
         ])
@@ -63,6 +64,7 @@ gulp.task('js:prod', function () {
             path.node + 'gsap/dist/ScrollTrigger.js',
             path.node + 'jquery-mask-plugin/dist/jquery.mask.js',
             path.node + 'slick-carousel/slick/slick.min.js',
+            path.node + 'locomotive-scroll/dist/locomotive-scroll.min.js',
             path.jsSourceFolder + '*.js',
             '!' + path.jsSourceFolder + 'admin.js'
         ])

@@ -78,6 +78,15 @@
         </div>
     </div>
 </footer>
+
+</div>
+
+<?php
+if (!isset($_COOKIE['cookies-consent'])) {
+    get_template_part('template-parts/cookies', 'policy');
+}
+?>
+
 </div>
 
 <?php wp_footer(); ?>

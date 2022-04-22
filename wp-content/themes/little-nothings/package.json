@@ -1,5 +1,5 @@
 {
-  "name": "just-a-change",
+  "name": "little-nothings",
   "version": "1.0.0",
   "description": "Little Nothings theme",
   "author": "Ricardo Carvalho",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "@wordpress/scripts": "^12.1.0",
     "dir-archiver": "^1.1.1",
+    "ftp-deploy": "^2.4.2",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.1.0",
@@ -44,12 +45,16 @@
   },
   "scripts": {
     "watch": "gulp watch",
-    "bundle": "gulp dev prod"
+    "bundle": "gulp dev prod",
+    "deploy": "node deploy"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "archiver": "^5.3.1",
     "bootstrap": "^5.1.3",
+    "ftp": "^0.3.10",
     "gsap": "^3.6.0",
+    "locomotive-scroll": "^4.1.4",
     "slick-carousel": "^1.8.1"
   }
 }
