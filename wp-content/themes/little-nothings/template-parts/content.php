@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Just_a_Change
+ * @package Little_Nothings
  */
 
 ?>
@@ -24,7 +24,6 @@
                             </a>
                         <?php endforeach; ?>
                         <h2 class="display-1 text-white fw-bolder text-font-featured mt-4 animate__animated animate__delay-150ms" data-animation="fadeInUp"><?php the_title(); ?></h2>
-                        <p class="post-meta little-display-12"><?php little_nothings_posted_on(); ?> • <?php little_nothings_posted_by(); ?></p>
                     </div>
                 </div>
             </div>
@@ -34,7 +33,8 @@
     <div class="entry-content py-5 mb-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-8">
+                <div class="col-md-8">
+                    <p class="text-center post-meta little-display-12"><?php little_nothings_posted_on(); ?> • <?php little_nothings_posted_by(); ?></p>
                     <?php the_content(); ?>
                 </div>
             </div>

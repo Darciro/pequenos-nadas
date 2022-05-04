@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Just_a_Change
+ * @package Little_Nothings
  */
 
 ?>

@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package Just_a_Change
+ * @package Little_Nothings
  */
 
 /**

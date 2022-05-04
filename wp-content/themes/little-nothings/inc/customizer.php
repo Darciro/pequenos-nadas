@@ -2,7 +2,7 @@
 /**
  * Little Nothings Theme Customizer
  *
- * @package Just_a_Change
+ * @package Little_Nothings
  */
 
 /**
@@ -56,6 +56,6 @@ function little_nothings_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function little_nothings_customize_preview_js() {
-	wp_enqueue_script( 'little-nothings-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+	wp_enqueue_script( 'little-nothings-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), LITTLE_NOTHINGS_VERSION, true );
 }
 add_action( 'customize_preview_init', 'little_nothings_customize_preview_js' );

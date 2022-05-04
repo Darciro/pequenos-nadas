@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Just_a_Change
+ * @package Little_Nothings
  */
 
 ?>
@@ -59,7 +59,7 @@
         </div>
         <div class="row align-items-start mt-5">
             <div class="col-lg-6 text-center text-lg-start animate__animated" data-animation="fadeInUp">
-                <p class="text-white mb-5 mb-lg-0 fs-6">2022 © Pequenos Nadas. Todos os direitos reservados.</p>
+                <p class="text-white mb-5 mb-lg-0 fs-6">2022 © Pequenos Nadas. Todos os direitos reservados.<br>Desenvolvido por <a href="http://planetastuto.pt/" target="_blank" class="text-purple fw-bold text-decoration-none">Planetastuto</a>.</p>
             </div>
             <div class="col-lg-6 text-center text-lg-end" data-animation="fadeInUp">
                 <a href="#" class="social-icon shadow-sm ms-3 rounded-circle bg-purple">

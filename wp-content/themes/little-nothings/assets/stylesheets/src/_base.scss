@@ -48,7 +48,7 @@ $caret-down-svg-white: 'data:image/svg+xml;utf8,<svg aria-hidden="true" focusabl
 @mixin grayscale_element($value) {
   -webkit-filter: #{"grayscale(#{$value})"};
   -moz-filter: #{"grayscale(#{$value})"};
-  filter:#{"grayscale(#{$value})"};
+  filter: #{"grayscale(#{$value})"};
 }
 
 @mixin background-opacity($color, $opacity: 0.3) {
@@ -155,6 +155,39 @@ $caret-down-svg-white: 'data:image/svg+xml;utf8,<svg aria-hidden="true" focusabl
 }
 
 
+@keyframes animate-bg {
+  0% {
+    background-color: $little-purple;
+  }
+  12.5% {
+    background-color: $little-blue;
+  }
+  25% {
+    background-color: $little-dark-blue;
+  }
+  37.5% {
+    background-color: $little-green;
+  }
+  50.0% {
+    background-color: $little-light-green;
+  }
+  50.0% {
+    background-color: $little-orange;
+  }
+  62.5% {
+    background-color: $little-yellow;
+  }
+  75.0% {
+    background-color: $little-red;
+  }
+  87.5% {
+    background-color: $little-purple;
+  }
+  100.0% {
+    background-color: red;
+  }
+}
+
 /******************************************************************************/
 /*  Globals                                                                   */
 /******************************************************************************/
@@ -229,9 +262,19 @@ body {
   overflow: hidden;
 }
 
+#primary {
+  overflow-x: hidden;
+}
+
 .fs-sm-15 {
   @include media-breakpoint-down(md) {
     font-size: 15px !important;
+  }
+}
+
+article {
+  img {
+    max-width: 100%;
   }
 }
 
@@ -248,6 +291,34 @@ body {
 
 .z-index-1 {
   z-index: 1;
+}
+
+.text-purple {
+  color: $little-purple;
+}
+
+.text-blue {
+  color: $little-blue;
+}
+
+.text-green {
+  color: $little-green;
+}
+
+.text-light-green {
+  color: $little-light-green;
+}
+
+.text-orange {
+  color: $little-orange;
+}
+
+.text-yellow {
+  color: $little-yellow;
+}
+
+.text-red {
+  color: $little-red;
 }
 
 .bg-purple {
@@ -280,6 +351,10 @@ body {
 
 .text-color-default {
   color: $text-color !important;
+}
+
+.border-1 {
+  border-bottom: 1px solid;
 }
 
 .bg-pattern-circles {
@@ -349,37 +424,37 @@ body {
 }
 
 #logo-svg {
-  .purple{
+  .purple {
     @include transition(fill .15s ease-in-out);
     fill: $little-purple;
   }
 
-  .blue{
+  .blue {
     @include transition(fill .30s ease-in-out);
     fill: $little-blue;
   }
 
-  .green{
+  .green {
     @include transition(fill .45s ease-in-out);
     fill: $little-green;
   }
 
-  .light-green{
+  .light-green {
     @include transition(fill .60s ease-in-out);
     fill: $little-light-green;
   }
 
-  .yellow{
+  .yellow {
     @include transition(fill .75s ease-in-out);
     fill: $little-yellow;
   }
 
-  .orange{
+  .orange {
     @include transition(fill .90s ease-in-out);
     fill: $little-orange;
   }
 
-  .red{
+  .red {
     @include transition(fill 1.05s ease-in-out);
     fill: $little-red;
   }
@@ -391,40 +466,44 @@ body {
     .green,
     .orange,
     .yellow,
-    .red{
+    .red {
       fill: #fff;
     }
 
     &:hover,
     &:active,
     &:focus {
-      .purple{
+      .purple {
         fill: $little-purple;
       }
 
-      .blue{
+      .blue {
         fill: $little-blue;
       }
 
-      .green{
+      .green {
         fill: $little-green;
       }
 
-      .light-green{
+      .light-green {
         fill: $little-light-green;
       }
 
-      .yellow{
+      .yellow {
         fill: $little-yellow;
       }
 
-      .orange{
+      .orange {
         fill: $little-orange;
       }
 
-      .red{
+      .red {
         fill: $little-red;
       }
     }
   }
+}
+
+.grecaptcha-badge {
+  display: none !important;
 }

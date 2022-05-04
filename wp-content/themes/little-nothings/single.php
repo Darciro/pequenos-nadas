@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Just_a_Change
+ * @package Little_Nothings
  */
 
 get_header();

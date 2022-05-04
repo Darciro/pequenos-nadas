@@ -8,7 +8,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Just_a_Change
+ * @package Little_Nothings
  */
 
 /**

@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Just_a_Change
+ * @package Little_Nothings
  */
 
 if ( ! function_exists( 'little_nothings_posted_on' ) ) :

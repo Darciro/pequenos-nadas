@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Just_a_Change
+ * @package Little_Nothings
  */
 
 get_header();
